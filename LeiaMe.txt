@@ -1,0 +1,126 @@
+﻿**********************************************************************************
+																				
+							   INF1301 - Jogo de Truco
+
+**********************************************************************************
+* 1521816 	Thiago Gioso Fernandes  		 	thiagogiosofernandes@hotmail.com
+* 1621146 	João Victor Galindo Borges do Rego 	doublito@gmail.com 
+* 1420397 	Gustavo Contreiras			 		gcontreiras@inf.puc-rio.br
+**********************************************************************************
+
+									 Instruções
+
+**********************************************************************************
+* Para jogar:
+*	Execute "JogoDeTruco.exe" dentro da pasta "Produto"
+**********************************************************************************
+
+				  		   Instruções para desenvolvedores
+
+**********************************************************************************
+* Para compilar e rodar os testes de cada módulo:
+* 	Abra o terminal (prompt de comando)
+*	Vá para o diretório da pasta Batches
+*	Carregue o ambiente do VS2010 executando "vsvars32.bat"
+*	(necessário ter o VS2010 instalado no diretório padrão)
+*	Execute "Tudo.bat" para limpar arquivos gerados anteriormente
+*	Os executáveis compilados e os logs estarão na pasta "Produto".
+*
+* 	- Para apenas compilar:
+*		Execute "LimpaTudo.bat" para limpar arquivos gerados anteriormente
+*		Execute "GMakeTudo.bat" para gerar os arquivos necessários para comoilar
+*		Execute "CompilaTudo.bat" para compilar
+*		Os executáveis compilados e os logs de erro estarão na pasta "Produto"
+*
+*	- Para apenas rodar os testes de cada módulo:
+*		Execute "TestaTudo.bat" ;
+*		Os logs de teste estarão na pasta "Produto"
+*
+* 		Para adicionar ou remover comandos de teste:						
+* 			Acesse TesteLista.script										
+*			Acesse TesteBaralho.scripts 						
+*			Acesse TesteMesa.scripts 							
+* 																	
+* 		Para ver detalhes dos testes realizado:							
+* 			Acesse TesteLista.log											
+*			Acesse TesteBaralhoDebug.log 								
+*			Acesse TesteMesaDebug.log 	 							
+*																	
+* 	- Para testar o módulo Interface:									
+*		Execute "JogoDeTrucoDebug.exe" ou "JogarComDebug.bat"								
+*		Para melhor entendimento, deve-se abrir o código de Interface.c 
+*		e acompanhar as operações do programa junto ao código
+*		com o auxílio da ferramenta CTRL+F de editores de texto.																	
+**********************************************************************************
+
+							   Diretórios e arquivos
+
+**********************************************************************************
+* Batches: 																	
+*	Tudo.bat 					Executa todos os batches em sequencia		 	
+*	LimpaTudo.bat 				Limpa arquivos de testes anteriores		 		
+*	GMakeTudo.bat 				Gera os arquivos necessários para compilar	 	
+*	CompilTudo.bat 				Compila o programa							 	
+*	TestaTudo.bat 				Executa os testes 	
+*	JogarComDebug.bat 			Executa o JogoDeTrucoDebug.exe
+**********************************************************************************
+* Composicao:
+*	Gmake.parm 					Parâmetros para a ferramenta GMake
+*	JogoDeTruco.comp 			Arquivo de composição do Jogo de Truco
+*	JogoDeTrucoDebug.comp 		Arquivo de composição do Teste Interface
+*	TesteMesaDebug.comp 		Arquivo de composição do Teste Mesa
+*	TesteBaralhoDebug.comp 		Arquivo de composição do Teste Baralho
+*	TesteLista.comp 			Arquivo de composição do Teste Lista
+**********************************************************************************
+* Docs:
+*	Requisitos Funcionais e Não-Funcionais.pdf
+*	Modelo Estrutural da Lista de Listas.png
+*	Arquitetura do Programa.png
+*	Diagrama de Fluxo.png
+*	Modelo Físico.png
+*	RELATORIO-Gustavo.txt
+*	RELATORIO-Thiago.txt
+*	RELATORIO-João.txt
+**********************************************************************************
+* Ferramnt:
+*	Compilebanner.exe			Compilador
+*	exbestat.exe 				Mostra as estatísticas dos testes
+*	GMake.exe 					Gera os arquivos necessários para compilar
+**********************************************************************************
+* Fontes:
+*	BARALHO.c 					Implementação do módulo BARALHO
+*	BARALHO.h 					Definição do módulo BARALHO
+*	LISTA.c 					Implementação do módulo LISTA
+*	LISTA.h 					Definição do módulo LISTA
+*	MESA.c 						Implementação do módulo MESA
+*	MESA.h 						Definição do módulo MESA
+*	INTERFACE.c 				Implementação do módulo INTERFACE
+*	INTERFACE.h 				Definição do módulo INTERFACE
+*	TestMES.c 					Implementação do módulo TESTE MESA
+*	TestBAR.c 					Implementação do módulo TESTE BARALHO
+*	TestLIS.c 					Implementação do módulo TESTE LISTA
+*	GENERICO.h 					Módulo de suporte para teste com arcabouço
+*	LERPARM.h 					Módulo de suporte para teste com arcabouço
+*	TST_ESPC.h 					Módulo de suporte para teste com arcabouço
+*	CONTA.h 					Módulo de suporte para teste com arcabouço
+**********************************************************************************
+* Objetos:
+*	ArcaboucoTeste.lib			Biblioteca do arcabouço
+**********************************************************************************
+* Produtos:
+*	TesteBaralho.exe 			Arquivo executável do teste do módulo BARALHO
+*	TesteLista.exe 	 			Arquivo executável do teste do módulo LISTA
+*	JogoDeTruco.exe  			Arquivo executável do Jogo de Truco
+**********************************************************************************
+* Scripts:
+*	Mesa.count			Arquivo com a declaração dos contadores do módulo MESA
+*	Baralho.count		Arquivo com a declaração dos contadores do módulo BARALHO
+*	TesteMesa.script 	Script de testes do módulo BARALHO
+*	TesteBaralho.script Script de testes do módulo BARALHO
+*	TesteLista.script 	Script de testes do módulo LISTA
+**********************************************************************************
+* Tabelas:
+*	IdTiposEspaco.def 			Define os tipos que o programa usa
+*	TiposEspacosBaralho.def 	Tipos do módulo BARALHO
+*	TiposEspacosListadef 		Tipos do módulo LISTA
+**********************************************************************************

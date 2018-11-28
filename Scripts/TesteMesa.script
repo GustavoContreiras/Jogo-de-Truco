@@ -1,0 +1,334 @@
+// Script:    TesteMesaComContador.script
+// Autor:     Gustavo Contreiras, Joao Victor Galindo, Thiago Gioso Fernandes
+// Data:      05/mai/2018
+// Proposito: Testar o modulo mesa do jogo de truco
+//
+
+== Inicializar valores validos de indice do vetor maos
+=declararparm   mao0	int 0
+=declararparm   mao1	int 1
+=declararparm   mao2	int 2
+=declararparm   mao3	int 3
+=declararparm   mao4	int 4
+=declararparm   mao5	int 5
+
+== Inicializar valores validos de indice do tipo da funcao esvaziar mesa
+=declararparm   deixavira	int 0
+=declararparm   tiravira	int 1
+
+== Inicializar valores validos de indice do tipo da funcao obter qtd cartas
+=declararparm   semprimeira	int 0
+=declararparm   comprimeira	int 1
+=declararparm   semultima	int 0
+=declararparm   comultima	int 1
+
+== Inicializar valores para controle de espacos
+=declararparm   ExibirTodos 	int  1
+=declararparm   ExibirAtivos 	int  2
+=declararparm   ExibirInativos 	int  3
+
+=declararparm   ComErro int 0
+=declararparm   SemErro int 1
+
+== Iniciar contagem
+=inicializarcontadores  ""
+=lercontadores          "..\\scripts\\Mesa"
+=iniciarcontagem
+
+== Verificar quantidade de contadores com zero
+=verificarcontagens 23
+
+== Verificar falhas (contador com zero eh uma falha)
+=AceitaFalhasAcumuladas 23
+
+== TESTE 1 - CRIAR LISTA DE LISTAS / CRIAR TODAS MAOS  / CRIAR LIXO / CRIAR MESA / DISTRIBUIR TODAS MAOS
+=resetteste
+
+== Criar lista de listas
+=criarlistadelistas
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  1
+
+== Criar todas maos
+=criarmao mao0
+=criarmao mao1
+=criarmao mao2
+=criarmao mao3
+=criarmao mao4
+=criarmao mao5
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  6
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  6
+
+== Criar lixo
+=criarlixo
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  6
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  6
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  1
+
+== Criar mesa
+=criarmesa 0
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  6
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  6
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  1
+
+== Distribuir todas maos
+=distribuirmaos
+
+== Verificar espacos alocados
+=verificartodosespacos       SemErro
+=obternumeroespacosalocados  7 	//baralho e maos
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  6
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  6
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de sair do switch e antes de retornar"  1
+
+== Verificar quantidade de contadores com zero
+=verificarcontagens 13
+=AceitaFalhasAcumuladas 13
+
+== TESTE 2 - CRIAR LISTA DE LISTAS / CRIAR 4 MAOS / DISTRIBUIR 4 MAOS
+=resetteste
+
+== Criar lista de listas
+=criarlistadelistas
+
+== Criar 4 maos
+=criarmao mao0
+=criarmao mao1
+=criarmao mao2
+=criarmao mao3
+
+== Distribuir 4 maos
+=distribuirmaos
+
+== Verificar espacos alocados
+=verificartodosespacos       SemErro
+=obternumeroespacosalocados  14 	//baralho e maos
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  2
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  2
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  10
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  10
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de entrar e declarar variaveis"  2
+=contagemcontador   "MES_DistribuirMaos - Depois de sair do switch e antes de retornar"  2
+
+== TESTE 3 - CRIAR LISTA DE LISTAS / CRIAR 2 MAOS / DISTRIBUIR 2 MAOS
+=resetteste
+
+== Criar lista de listas
+=criarlistadelistas
+
+== Criar 2 maos
+=criarmao mao0
+=criarmao mao1
+
+== Distribuir 2 maos
+=distribuirmaos
+
+== Verificar espaços alocados
+=verificartodosespacos       SemErro
+=obternumeroespacosalocados  21	//baralho e maos
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  3
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  12
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  12
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  1
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_DistribuirMaos - Depois de sair do switch e antes de retornar"  3
+
+== TESTE 4 - CRIAR MESA / OBTER QTD CARTAS / CRIAR LIXO / ESVAZIAR MESA / ESVAZIAR LIXO
+=resetteste
+
+== Criar mesa
+=criarmesa 4
+
+== Obter quantidade de cartas
+=obterqtdcartas semprimeira semultima
+
+== Obter quantidade de cartas
+=obterqtdcartas comprimeira semultima
+
+== Obter quantidade de cartas
+=obterqtdcartas semprimeira comultima
+
+== Obter quantidade de cartas
+=obterqtdcartas comprimeira comultima
+
+== Criar lixo
+=criarlixo
+
+== Esvaziar mesa
+=esvaziarmesa tiravira
+
+== Esvaziar lixo
+=esvaziarlixo
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  3
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  12
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  12
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  2
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  2
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  2
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  2
+=contagemcontador   "MES_EsvaziarMesa - Depois de entrar"  1
+=contagemcontador   "MES_EsvaziarMesa - Depois de sair do switch e antes de retornar"  1
+=contagemcontador   "MES_EsvaziarLixo - Depois de entrar"  1
+=contagemcontador   "MES_EsvaziarLixo - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - Depois de entrar"  4
+=contagemcontador   "MES_ObterQtdCartas - ComPrimeira e ComUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - ComPrimeira e SemUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - SemPrimeira e ComUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - SemPrimeira e SemUltima - Antes de retornar"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_DistribuirMaos - Depois de sair do switch e antes de retornar"  3
+
+== TESTE 5 - CRIAR LISTA DE LISTAS / CRIAR 6 MAOS / DISTRIBUIR MAOS / CRIAR MESA COM 6 CARTAS / CRIAR LIXO / TRANSFERIR TUDO PRO LIXO
+=resetteste
+
+== Criar lista de listas
+=criarlistadelistas
+
+== Criar 6 maos
+=criarmao mao0
+=criarmao mao1
+=criarmao mao2
+=criarmao mao3
+=criarmao mao4
+=criarmao mao5
+
+== Distribuir maos
+=distribuirmaos
+
+== Verificar espaços alocados
+=verificartodosespacos       SemErro
+=obternumeroespacosalocados  28	//baralho e maos
+
+== Criar mesa
+=criarmesa 6
+
+== Criar lixo
+=criarlixo
+
+== Transferir todas cartas pro lixo
+=transferircartasprolixo
+
+== Verificar espacos alocados
+=verificartodosespacos       SemErro
+=obternumeroespacosalocados  37 	//baralho e maos (7x4) + todas listas (9x1)
+
+== Destruir listas
+=destruirlistas
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  4
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  4
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  18
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  18
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  3
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  3
+=contagemcontador   "MES_EsvaziarMesa - Depois de entrar"  1
+=contagemcontador   "MES_EsvaziarMesa - Depois de sair do switch e antes de retornar"  1
+=contagemcontador   "MES_EsvaziarLixo - Depois de entrar"  1
+=contagemcontador   "MES_EsvaziarLixo - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - Depois de entrar"  4
+=contagemcontador   "MES_ObterQtdCartas - ComPrimeira e ComUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - ComPrimeira e SemUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - SemPrimeira e ComUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - SemPrimeira e SemUltima - Antes de retornar"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de entrar e declarar variaveis"  4
+=contagemcontador   "MES_DistribuirMaos - Depois de sair do switch e antes de retornar"  4
+=contagemcontador   "MES_TransferirTodasCartasProLixo - Depois de entrar e declarar variaveis" 1
+=contagemcontador   "MES_TransferirTodasCartasProLixo - Antes de retornar" 1
+
+== TESTE 6 - IDENTIFICAR QUEM JOGOU QUAL
+=resetteste
+
+== Identificar quem jogou
+=identificarquemjogouqual 2 1
+=identificarquemjogouqual 2 2
+=identificarquemjogouqual 4 1
+=identificarquemjogouqual 4 2
+=identificarquemjogouqual 4 3
+=identificarquemjogouqual 4 4
+=identificarquemjogouqual 6 1
+=identificarquemjogouqual 6 2
+=identificarquemjogouqual 6 3
+=identificarquemjogouqual 6 4
+=identificarquemjogouqual 6 5
+=identificarquemjogouqual 6 6
+
+== Verificar quantidade de contadores contados
+=contagemcontador   "MES_CriarListaDeListas - Depois de entrar e declarar variaveis"  4
+=contagemcontador   "MES_CriarListaDeListas - Depois de atribuir valor NaoNULL e antes de sair"  4
+=contagemcontador   "MES_CriarMao - Depois de entrar e declarar variaveis"  18
+=contagemcontador   "MES_CriarMao - Depois de atribuir valor NaoNULL e antes de sair"  18
+=contagemcontador   "MES_CriarMesa - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_CriarMesa - Depois de atribuir valor NaoNULL e antes de sair"  3
+=contagemcontador   "MES_CriarLixo - Depois de entrar e declarar variaveis"  3
+=contagemcontador   "MES_CriarLixo - Depois de atribuir valor NaoNULL e antes de sair"  3
+=contagemcontador   "MES_EsvaziarMesa - Depois de entrar"  1
+=contagemcontador   "MES_EsvaziarMesa - Depois de sair do switch e antes de retornar"  1
+=contagemcontador   "MES_EsvaziarLixo - Depois de entrar"  1
+=contagemcontador   "MES_EsvaziarLixo - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - Depois de entrar"  4
+=contagemcontador   "MES_ObterQtdCartas - ComPrimeira e ComUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - ComPrimeira e SemUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - SemPrimeira e ComUltima - Antes de retornar"  1
+=contagemcontador   "MES_ObterQtdCartas - SemPrimeira e SemUltima - Antes de retornar"  1
+=contagemcontador   "MES_DistribuirMaos - Depois de entrar e declarar variaveis"  4
+=contagemcontador   "MES_DistribuirMaos - Depois de sair do switch e antes de retornar"  4
+=contagemcontador   "MES_TransferirTodasCartasProLixo - Depois de entrar e declarar variaveis" 1
+=contagemcontador   "MES_TransferirTodasCartasProLixo - Antes de retornar" 1
+=contagemcontador   "MES_IdentificarQuemJogouQual - Depois de entrar"  12
+=contagemcontador   "MES_IdentificarQuemJogouQual - Depois de sair do switch e antes de retornar"  12
+
+== Verificar quantidade de contadores com zero
+=verificarcontagens 0
+=AceitaFalhasAcumuladas 0
+
+== Terminar contagem
+=terminarcontadores
+
+
+
+// fim
