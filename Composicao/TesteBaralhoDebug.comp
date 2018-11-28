@@ -1,0 +1,26 @@
+# Teste do módulo Baralho compilado com debug
+
+[Diretorios]
+
+Nome        =  TesteBaralhoDebug
+PathDefault =  ..\Fontes
+err         =  ..\Produto
+obj         =  ..\Objetos
+c           =  ..\Fontes
+h           =  ..\Fontes
+def         =  ..\Tabelas
+
+[Modulos]
+Lista	
+Baralho     /D_DEBUG
+TestBAR     /D_DEBUG
+
+[BuildInicio]
+/OUT:..\produto\TesteBaralhoDebug.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]

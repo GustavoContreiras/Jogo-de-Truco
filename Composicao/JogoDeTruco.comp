@@ -1,0 +1,28 @@
+# Jogo de Truco usando os módulos interface, mesa, baralho e lista e a biblioteca contendo o arcabouço
+
+[Diretorios]
+
+Nome        =  JogoDeTruco
+PathDefault =  ..\Fontes
+err         =  ..\Produto
+obj         =  ..\Objetos
+c           =  ..\Fontes
+h           =  ..\Fontes
+def         =  ..\Tabelas
+
+[Modulos]
+Lista
+Baralho
+Mesa 		
+Interface
+
+
+[BuildInicio]
+/OUT:..\Produto\JogoDeTruco.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]

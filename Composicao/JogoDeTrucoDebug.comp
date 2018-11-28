@@ -1,0 +1,27 @@
+# Teste do Jogo de Truco compilado com debug
+
+[Diretorios]
+
+Nome        =  JogoDeTrucoDebug
+PathDefault =  ..\Fontes
+err         =  ..\Produto
+obj         =  ..\Objetos
+c           =  ..\Fontes
+h           =  ..\Fontes
+def         =  ..\Tabelas
+
+[Modulos]
+Lista
+Baralho
+Mesa 
+Interface 	/D_DEBUG
+
+[BuildInicio]
+/OUT:..\Produto\JogoDeTrucoDebug.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]

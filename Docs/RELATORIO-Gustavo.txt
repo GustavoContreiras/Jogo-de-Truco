@@ -1,0 +1,204 @@
+T2:
+
+04/04/2018 - 1h trabalhada - Estudar
+	Estudamos os requisitos funcionais e não funcionais de um jogo de truco.
+
+
+05/04/2018 - 1h trabalhada - Estudar
+	Estudamos as regras do jogo de truco baseados nas regras de um encontro nacional de jogos de truco.
+
+
+09/04/2018 - 2h trabalhadas - Revisar Especificações
+	Revisamos as especificações do programa vendo especificações de outros grupos.
+
+
+11/04/2018 - 1h	trabalhada - Especificar as Funções
+	Fizemos um esboço das funções que existirão no programa.
+
+
+11/04/2018 - 1h trabalhada - Especificar os Módulos
+	Fizemos um esboço dos módulos que existirão no programa.
+
+
+16/04/2018 - 3h trabalhadas - Revisar Especificações
+	Foi feita uma revisão da Visão de Módulos, da Visão de Interface e dos Requisitos.
+
+
+18/04/2018 - 3h trabalhadas - Codificar Módulo
+	Foi iniciado o desenvolvimento do Módulo Baralho.
+
+
+19/04/2018 - 1h trabalhada - Estudar
+	Estudamos o Módulo Baralho e o Módulo Lista para continuar a codificação.
+
+
+20/04/2018 - 1h trabalhada - Projetar
+	Foi feito um gráfico que mostra como a estrutura de Lista de Listas funcionará.
+
+
+23/04/2018 - 1h trabalhada - Especificar módulos
+	Foi iniciado o desenvolvimento do MESA.h e MESA.c.
+
+
+23/04/2018 - 1h trabalhada - Especificar funções
+	Foram definidas as funções do módulo mesa.
+
+
+24/04/2018 - 1h trabalhada - Estudar
+	Foi estudado os módulos do trabalho.
+
+
+29/04/2018 - 2h trabalhadas - Estudar
+	Foi estudado o funcionamento do arcabouço.
+
+
+30/04/2018 - 1h trabalhada - Estudar
+	Foi estudado o funcionamento do arcabouço.
+
+
+30/04/2018 - 1h trabalhada - Codificar módulo
+	Foi iniciado o desenvolvimento do módulo de teste TESTCARTAS.c.
+
+
+02/05/2018 - 2h trabalhadas - Projetar, Estudar, Codificar
+	Foi projetado os próximos passos a serem feitos até a entrega do trabalho
+	Foi estudado os slides das aulas sobre testes automatizados.
+	Foi Iniciada a codificação da função CriarBaralho.
+
+
+02/05/2018 - 4h trabalhadas - Revisar projetos, Codificar módulo
+	Foi revisado o gráfico da estrutura de lista de listas.
+	Foi revisada a visão de interface e visão de módulos.
+	Foi iniciada a codificação das funções CriarBaralho e CriarEmbaralharVetor.
+	Foi concluída a função CriarEmbaralharVetor.
+
+
+03/05/2018 - 2h trabalhadas - Codificar módulo
+	Foi iniciado o desenvolvimento do TestBAR.c
+
+
+03/05/2018 - 6h trabalhadas - Revisar projetos, Revisar código do módulo, Codificar módulo
+	Foi feito um gráfico da estrutura dos tipos.
+	Foi atualizada a Visão de Módulos e de Interface.
+	Foi concluído o CriarBaralho, sendo necessário agora testes.
+
+
+04/05/2018 - 11h trabalhadas - Estudar, Revisar projetos, Revisar código do módulo,
+							   Codificar módulo, Diagnosticar e corrigir problemas
+	O projeto foi reavaliado por inteiro pelo grupo pois não estavamos conseguindo passar nem retornar parâmetros pelas funções.
+	O dia foi encerrado com a CriarBaralho e CriarCarta funcionando.
+	A CriarBaralho cria uma lista de 40 cartas em ordem aleatoria.
+
+
+05/05/2018 - 14h trabalhadas - Estudar, Revisar projetos, Revisar código do módulo,
+							   Revisar script de teste, Redigir script de teste,
+							   Diagnosticar e corrigir problemas
+	Foi estudado a fundo o arcabouço e finalmente entendido como funciona.
+	Foi reiniciada do zero a implementãção do módulo TesteBaralho e agora já há dois comandos funcionando.
+	A massa de testes do módulo TesteBaralho está aumentando conforme ele está sendo desenvolvido.
+
+
+06/05/2018 - 10h trabalhadas - Revisar código do módulo, Redigir script de teste, Revisar projetos
+	O projeto foi lapidado conforme os conceitos de programação modular.
+	O módulo baralho e o módulo teste baralho foram incrementados e revisados.
+
+
+07/05/2018 - 9h trabalhadas - Revisar projetos, codificar modulo, realizar testes
+	O modulo teste baralho foi incrementado, assim como os testes.
+	O projeto foi revisado.
+
+08/05/2018 - 4h trabalhadas - Revisar projetos, codificar modulo, realizar testes
+	O projeto foi todo revisado após o prazo de entrega.
+	Foi iniciada a tarefa de aprender sobre e desenvolver os arquivos necessários para compilar.
+
+09/05/2018 - 6h trabalhadas - Revisar projetos, codificar modulo, realizar testes
+	O módulo baralho foi revisado, algumas funções foram dispensadas.
+	O módulo está mais coeso.
+
+10/05/2018 - 5h trabalhadas - Estudar, Revisar projetos, codificar modulo, realizar testes
+	Estudo do teste lista. Incrementação do script de teste do módulo lista.
+	Revisão dos documentos do programa (visão de módulo, visão de interface, etc).
+	Descoberta a solução de alguns problemas como retornar vetor de uma função.
+
+
+T4:
+
+11/05/2018 - 8h trabalhadas - Codificar modulo
+	Iniciado o desenvolvimento do módulo mesa (funções CriarMesa, CriarMao, DistribuirMaos e ObterValorManilha).
+	Funções ExcluirPtrParaElem e ObterQtdElem criadas no módulo lista.
+
+12/05/2018 - 5h trabalhadas - Codificar módulo
+	Foi iniciado o módulo Interface do Usuário.
+	O jogo está começando a ganhar forma e já é possível interagir com ele pelo terminal.
+
+23/05/2018 - 4h trabalhadas - Codificar módulo
+	Foi desenvolvida a tela inicial e a tela de regras.
+
+25/05/2018 - 5h trabalhadas - Codificar módulo, Estudar, Revisar projetos
+	Foram criadas as funções PreencherVetorCartas e EmbaralharVetorCartas que auxiliam na criação do baralho.
+	Foi desenvolvido o sistema de sorteio de quem começa a jogar.
+
+31/05/2018 - 8h trabalhadas - Codificar módulo, Estudar, Revisar projetos.
+	Foram criadas as funções PrintarTelaFimApostas e PrintarTelaFimRodada.
+	Foram criadas as funções DeterminarVencedorApostas e DeterminarVencedorRodada.
+	Foi criada a função EsvaziarMesa que tem a funcionalidade de tirar (ou não) a vira da mesa.
+	Foi estudado a lógica do jogo de truco e suas regras.
+	O projeto foi revisado para poder implementar a lógica do jogo.
+
+03/06/2018 - 4h trabalhadas - Codificar módulo, Revisar projetos
+	Foi feita a parte de dispensar carta e aumentar aposta.
+	Sendo necessario agora fazer isso pra um jogo de 4 ou 6 jogadores.
+	Falta impedir que quem tenha aumentado a aposta possa aumentar de novo apos aceitarem.
+	Falta determinar quem jogará em caso de empate (jogador que apostou a carta empatada primeiro).
+
+04/06/2018 - 3h trabalhadas - Codificar módulo
+	Foi iniciado o desenvolvimento do jogo para 4 jogadores.
+
+05/06/2018 - 5h trabalhadas - Codificar módulo, Projetar
+	Foi criada a função MES_ObterQtdCartas para não precisar usar a LIS_ObterQtdElem.
+	A função DeterminarResultado está funcionando para 4 jogadores desde que nao tenha aumento de aposta.
+	Foi feito um diagrama de fluxo identificando os processos do programa do inicio ao fim.
+	Foi feita a função MES_CriarListaDeListas para não precisar usar a LIS_CriarLista.
+
+06/06/2018 - 4h trabalhadas - Codificar módulo, Revisar projetos, Revisar especificações
+	Foi concluído o jogo, faltando apenas tratar o caso de "mão de onze".
+	Foi feito um diagrama de fluxo para facilitar o entendimento dos processos do programa.
+	Foi atualizada a arquitetura do programa.
+	Foram atualizados os requisitos funcionais e nao-funcionais do programa.
+
+18/06/2018 - 2h trabalhadas - Estudar
+	Foi estudado o módulo contador porém não foi entendido totalmente.
+
+22/06/2018 - 10h trabalhadas - Codificar módulo, Estudar
+	Foi estudado o módulo contador e finalmente foi entendido.
+	O TestBAR.c foi incrementado com novas funções do módulo Baralho.
+	Foi iniciado o desenvolvimento do TestMES.c
+
+23/06/2018 - 4h trabalhadas - Estudar, Codificar módulo
+	Foram estudadas possibilidades para testar o módulo Interface que contém a main.
+	Foi incrementada a implementação do TestMES.c
+
+24/06/2018 - 10h trabalhadas - Codificar módulo, Revisar projetos
+	Foram colocados "printfs" depois de "asserts" dentro de blocos _DEBUG na main para 
+	checar os retornos das funções, testando assim o módulo Interface.
+	Foi finalizado o módulo TestMES.c
+	Foi atualizado o Leia-me.txt
+
+24/06/2018 - 6h trabalhadas - Codificar módulo
+	Foi verificado o TestBAR.c, tendo novas funções e comandos inseridos.
+
+26/06/2018 - 3h trabalhadas - Codificar módulo, Estudar
+	A TestLIS.c foi reestruturada, com a criação da função IdentificarComando.
+	Foram adicionados novos comandos na TestLIS.c relativos a novas funções inseridas no Lista.c
+	Foi elaborado o script de teste do módulo lista usando contadores em praticamente todas instruções de função.
+	Foi estudado o módulo Controlador de Espaço Dinâmico.
+	Foi iniciado o uso do CEspDin no teste do módulo Lista.
+
+27/06/2018 - 4h trabalhadas - Codificar módulo
+	Foi iniciado o uso do CEspDin no teste do módulo Baralho e Mesa.
+
+29/06/2018 - 8h trabalhadas - Codificar módulo, Estudar, Diagnosticar e corrigir problemas
+	Foi desenvolvida a mão de onze e a mão de ferro na Interface.c
+	Foram desenvolvidas opções de DEBUG na Interface, como Pedir Onze (para testes)
+	Foi estudado espacos dinamicos e comandos de preprocessamento
+	Foram corrigidos problemas na interface.

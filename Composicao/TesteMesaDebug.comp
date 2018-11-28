@@ -1,0 +1,27 @@
+# Teste do módulo Mesa compilado com debug
+
+[Diretorios]
+
+Nome        =  TesteMesaDebug
+PathDefault =  ..\Fontes
+err         =  ..\Produto
+obj         =  ..\Objetos
+c           =  ..\Fontes
+h           =  ..\Fontes
+def         =  ..\Tabelas
+
+[Modulos]
+Lista
+Baralho
+Mesa 		/D_DEBUG
+TestMES 	/D_DEBUG
+
+[BuildInicio]
+/OUT:..\produto\TesteMesaDebug.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]
